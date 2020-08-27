@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Megrim';
+  src: url('../fonts/Megrim-Regular.ttf');
+}
+@font-face {
+  font-family: 'Caudex';
+  src: url('../fonts/Caudex-Regular.ttf');
+}
+@font-face {
+  font-family: 'Nova Mono';
+  src: url('../fonts/NovaMono-Regular.ttf');
+}
+body {
+  margin: 0;
+  background: #DCD6F7;
+  background: linear-gradient(to bottom, #a6b1e1, #dcd6f7);
+  background-repeat: no-repeat;
+  color: #4E4C67;
+  min-height: 100vh;
+  font-size: 18px;
+}
+
+header {
+  font-family: 'Nova Mono', monospace;
+  /*font-family: 'Megrim', cursive;*/
+  align-content: center;
+  text-align: center;
+  padding: 24px 16px 12px 16px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  align-content: center;
+  box-sizing: border-box;
+  display: grid;
+  font-family: 'Caudex', serif;
+  /*font-family: 'Nova Mono', monospace;*/
+  hyphens: auto;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 48px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  margin-top: 1.5em;
+}
+p {
+  font-size: 18px;
+}
+a {
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px dashed white;
+  color: #4E4C67;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 2px;
+  transition: all 0.2s ease;
+}
+.logo-link {
+  border: 1px dashed white;
+  border-radius: 50%;
+  padding: 4px;
+  line-height: 42px;
+  margin: 4px;
+}
+.logo-link > img {
+  transform: translateY(6.5px);
+}
+a:hover {
+  opacity: 0.75;
+  border-bottom: 1px dashed #985F6F;
+  transition: all 0.2s ease;
+}
+.logo-link:hover {
+  opacity: 0.75;
+  border: 1px dashed #985F6F;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+a:active, .logo-link:active {
+  opacity: 1;
+  border: 1px solid white;
+}
+ul {
+  list-style-type: none;
+}
+li > span {
+  position: relative;
+}
+li > span::before {
+  content: "> ";
+  position: absolute;
+  top: -2px;
+  left: -24px;
+}
+.divider {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0), #985F6F, rgba(0,0,0,0));
+  margin-bottom: 18px;
+}
