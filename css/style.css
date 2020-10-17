@@ -11,11 +11,11 @@
 
 body {
   margin: 0;
-  background: #DCD6F7;
-  background: linear-gradient(to bottom, #1A1B41, #6290C3);
+  background: #b2597b;
+  background: linear-gradient(to bottom, #1A1B41 0%, #b2597b 60%);
   background-repeat: no-repeat;
   color: #F1FFE7;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-size: 18px;
 }
@@ -39,14 +39,15 @@ main {
   font-family: 'Caudex', serif;
   hyphens: auto;
   line-height: 1.65;
-  margin: 0 auto;
+  margin: 1rem auto;
   max-width: 680px;
   text-align: center;
   border-radius: 2rem;
-  padding: 1rem 0;
+  padding: 0.5rem;
+  box-shadow: 0 0 6px 6px rgba(0,0,0,0.25);
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
   margin-top: 1.5em;
@@ -138,7 +139,7 @@ li > span.current::before {
   bottom: 0;
   left: 0;
   background:transparent;
-  background: linear-gradient(top, rgba( 255, 255, 255, 255 ) 0%, #6290C3 80%, #9160c1 90%, #b2597b );
+  background: linear-gradient(top, #1A1B41 0%, #6290C3 80%, #9160c1 90%, #b2597b );
   background: -moz-linear-gradient(top, rgba( 255, 255, 255, 0) 0%, #6290C3 80%, #9160c1 90%, #b2597b );
   background: -ms-linear-gradient(top, rgba( 255, 255, 255, 0 ) 0%, #6290C3 80%, #9160c1 90%, #b2597b );
   background: -o-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, #6290C3 80%, #9160c1 90%, #b2597b );
