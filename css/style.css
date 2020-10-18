@@ -14,11 +14,33 @@ html {
 body {
   margin: 0;
   background: #b2597b;
-  background: linear-gradient(to bottom, #1A1B41 0%, #6290C3 80%, #9160c1 90%, #b2597b);
-  background-repeat: no-repeat;
   color: #F1FFE7;
   height: 100%;
   width: 100%;
+}
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background-image: linear-gradient(transparent 65%, #b2597b 100%), url('../images/nasa.png');
+  background-size: cover;
+  background-attachment: fixed
+  z-index: -1;
+}
+.bg-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #1A1B41 0%, #6290C3 80%, #9160c1 90%, #b2597b);
+  background-attachment: fixed;
+  z-index: -1;
 }
 @media only screen and (max-width: 600px) {
   html {
@@ -132,15 +154,4 @@ li > span.current::before {
   font-weight: 700;
   font-size: 1.25rem;
   font-style: italic;
-}
-.bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/nasa.png');
-  background-size: cover;
-  opacity: 0.5;
-  z-index: -1;
 }
