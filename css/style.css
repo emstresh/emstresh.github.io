@@ -8,7 +8,9 @@
   src: url('../fonts/NovaMono-Regular.ttf');
   font-display: fallback;
 }
-
+html {
+  font-size: 18px;
+}
 body {
   margin: 0;
   background: #b2597b;
@@ -17,9 +19,12 @@ body {
   color: #F1FFE7;
   height: 100%;
   width: 100%;
-  font-size: 18px;
 }
-
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
 header {
   font-family: 'Nova Mono', monospace;
   align-content: center;
