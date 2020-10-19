@@ -17,30 +17,34 @@ body {
   color: #F1FFE7;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
-.bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  height: auto;
-  background-image: linear-gradient(transparent 90%, #b2597b 100%), url('../images/nasa.png');
-  background-size: cover;
-  background-attachment: fixed
-  z-index: -1;
-}
-.bg-image:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.root {
   width: 100%;
   min-height: 100%;
   height: auto;
   background: linear-gradient(to bottom, #1A1B41 0%, #6290C3 80%, #9160c1 90%, #b2597b);
   background-attachment: fixed;
-  z-index: -1;
+}
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  min-height: 100%;
+  height: auto;
+  opacity: 0.75;
+  background-image: url('../images/stars.png');
+  background-repeat: repeat;
+  animation: bg-slide 300s linear infinite;
+}
+@-webkit-keyframes bg-slide {
+  from {
+    transform: translateX(0);
+  }
+  to { 
+    transform: translateX(-50%);
+  }
 }
 @media only screen and (max-width: 600px) {
   html {
