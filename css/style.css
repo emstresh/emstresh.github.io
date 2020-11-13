@@ -13,7 +13,7 @@ html {
 }
 body {
   margin: 0;
-  background: #b2597b;
+  background: #1A1B41;
   color: #F1FFE7;
   height: 100%;
   width: 100%;
@@ -27,6 +27,7 @@ body {
   background-attachment: fixed;
 }
 .bg-image {
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -92,6 +93,11 @@ a {
   text-decoration: none;
   border-radius: 2px;
   padding: 2px;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: rgba(241, 255, 231, 0.5);
   transition: all 0.2s ease;
 }
 footer {
@@ -108,10 +114,6 @@ footer {
 }
 .logo-link > img {
   transform: translateY(6.5px);
-}
-a:hover {
-  opacity: 0.5;
-  transition: all 0.2s ease;
 }
 .logo-link:hover {
   opacity: 0.5;
