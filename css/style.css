@@ -33,7 +33,6 @@ body {
   left: 0;
   width: 200vw;
   height: 100%;
-  /*height: auto;*/
   background-image: url('../images/stars.png');
   background-repeat: repeat;
   animation: bg-slide 300s linear infinite;
@@ -127,6 +126,7 @@ a:active, .logo-link:active {
 }
 ul {
   list-style-type: none;
+  text-align: left;
 }
 li {
   margin-bottom: 0.25rem;
@@ -148,16 +148,12 @@ li > span.current::before {
   left: -24px;
 }
 .content {
-  /*background: rgba(0,0,0,0.25);*/
-  max-width: 600px;
+  max-width: 450px;
   margin: auto;
-  /*border-radius: 2rem;*/
-  /*box-shadow: 0 0 6px 6px rgba(0,0,0,0.25);*/
 }
 hr {
   border-top: 1px solid #F1FFE7;
   opacity: 0.25;
-  /*background: linear-gradient(to right, rgba(0,0,0,0), #C2E7DA, rgba(0,0,0,0));*/
   margin-bottom: 18px;
 }
 .current {
